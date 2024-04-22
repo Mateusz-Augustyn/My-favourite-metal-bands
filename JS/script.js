@@ -1,14 +1,16 @@
-let button = document.querySelector(".button");
-let table = document.querySelector(".container");
+{
+    const toggleTableVisibility = () => {
 
-button.addEventListener("click", () => {
-    table.classList.toggle("tableNone");
+        const table = document.querySelector(".js-container");
+        const button = document.querySelector(".js-button");
+        table.classList.toggle("tableNone");
+        button.innerText = table.classList.contains("tableNone") ? "Pokaż tabelę" : "Schowaj tabele";
+    };
 
+    const init = () => {
+        const button = document.querySelector(".js-button");
+        button.addEventListener("click", toggleTableVisibility);
+    };
 
-if (table.classList.contains("tableNone")) {
-    button.innerHTML = "<span>Pokaż tabelę</span>";
-} else {
-    button.innerHTML = "<span>Schowaj tabele</span>";
+    init();
 }
-
-});
