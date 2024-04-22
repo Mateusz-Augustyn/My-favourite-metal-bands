@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    padding: 1%;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 6px 7px 5px 0px rgba(32, 31, 33, 0.28);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .list__item {
+    background-color: #514e4e;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px 30px 20px 30px;
+  }
+  
+  .list__item:hover {
+    outline: 1px solid;
+  }
+  
+  .list__link {
+    text-decoration: none;
+    color: #fff;
+  }
